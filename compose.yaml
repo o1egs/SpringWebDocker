@@ -1,0 +1,19 @@
+#version: '3'
+#services:
+#  nginx:
+#    image: nginx:mainline-alpine3.18-perl
+#    networks:
+#      - reverse_proxy
+#    ports:
+#      - '80:80'
+#
+#  app:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    networks:
+#      - reverse_proxy
+#
+#networks:
+#  reverse_proxy:
+#    driver: local
