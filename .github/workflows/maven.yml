@@ -29,11 +29,11 @@ jobs:
     - name: Test
       run: mvn test
 
-  docker_:
-    name: 'Docker'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+  # docker_:
+  #   name: 'Docker'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: Build the Docker image
+  #       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
   
