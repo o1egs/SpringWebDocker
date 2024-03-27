@@ -11,6 +11,7 @@ public class HelloWorldController {
     public ResponseEntity<String> hello() {
 //        some useless lines of code
 //        ...
+//        hihihiha
         return new ResponseEntity<>("Hello, world!", HttpStatus.OK);
     }
 
